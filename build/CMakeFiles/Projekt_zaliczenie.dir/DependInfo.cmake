@@ -92,6 +92,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "C:/Users/A/Desktop/Projekt_zaliczenie/.."
   "C:/pico/pico-sdk/src/rp2_common/pico_atomic/include"
   "C:/pico/pico-sdk/lib/tinyusb/src"
+  "C:/Users/A/Desktop/Projekt_zaliczenie/lib"
   "C:/pico/pico-sdk/src/common/pico_stdlib_headers/include"
   "C:/pico/pico-sdk/src/rp2_common/hardware_gpio/include"
   "C:/pico/pico-sdk/src/common/pico_base_headers/include"
@@ -151,6 +152,8 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "C:/pico/pico-sdk/src/rp2_common/hardware_spi/include"
   "C:/pico/pico-sdk/src/rp2_common/hardware_i2c/include"
   "C:/pico/pico-sdk/src/rp2_common/hardware_pio/include"
+  "C:/pico/pico-sdk/src/rp2_common/hardware_dma/include"
+  "C:/pico/pico-sdk/src/rp2_common/hardware_rtc/include"
   )
 
 # The set of dependency files which are needed:
@@ -186,12 +189,14 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/pico/pico-sdk/src/rp2040/pico_platform/platform.c" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2040/pico_platform/platform.c.obj" "gcc" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2040/pico_platform/platform.c.obj.d"
   "C:/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.obj" "gcc" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.obj.d"
   "C:/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj" "gcc" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj.d"
+  "C:/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj" "gcc" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj.d"
   "C:/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj" "gcc" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj.d"
   "C:/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" "gcc" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj.d"
   "C:/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj" "gcc" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj.d"
   "C:/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj" "gcc" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj.d"
   "C:/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj" "gcc" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj.d"
   "C:/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj" "gcc" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj.d"
+  "C:/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.obj" "gcc" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.obj.d"
   "C:/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj" "gcc" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj.d"
   "C:/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj" "gcc" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj.d"
   "C:/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj" "gcc" "CMakeFiles/Projekt_zaliczenie.dir/C_/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj.d"

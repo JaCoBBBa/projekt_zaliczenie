@@ -183,6 +183,19 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h\fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir\build.make /nologo -$(MAKEFLAGS) pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir\build
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h\fast
 
+#=============================================================================
+# Target rules for targets named lib
+
+# Build rule for target.
+lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) lib
+.PHONY : lib
+
+# fast build rule for target.
+lib\fast:
+	$(MAKE) $(MAKESILENT) -f lib\CMakeFiles\lib.dir\build.make /nologo -$(MAKEFLAGS) lib\CMakeFiles\lib.dir\build
+.PHONY : lib\fast
+
 C_\pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.obj: C_\pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.obj
 .PHONY : C_\pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.obj
 
@@ -935,6 +948,30 @@ C_\pico\pico-sdk\src\rp2_common\hardware_divider\divider.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projekt_zaliczenie.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projekt_zaliczenie.dir\C_\pico\pico-sdk\src\rp2_common\hardware_divider\divider.S.obj
 .PHONY : C_\pico\pico-sdk\src\rp2_common\hardware_divider\divider.S.obj
 
+C_\pico\pico-sdk\src\rp2_common\hardware_dma\dma.obj: C_\pico\pico-sdk\src\rp2_common\hardware_dma\dma.c.obj
+.PHONY : C_\pico\pico-sdk\src\rp2_common\hardware_dma\dma.obj
+
+# target to build an object file
+C_\pico\pico-sdk\src\rp2_common\hardware_dma\dma.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projekt_zaliczenie.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projekt_zaliczenie.dir\C_\pico\pico-sdk\src\rp2_common\hardware_dma\dma.c.obj
+.PHONY : C_\pico\pico-sdk\src\rp2_common\hardware_dma\dma.c.obj
+
+C_\pico\pico-sdk\src\rp2_common\hardware_dma\dma.i: C_\pico\pico-sdk\src\rp2_common\hardware_dma\dma.c.i
+.PHONY : C_\pico\pico-sdk\src\rp2_common\hardware_dma\dma.i
+
+# target to preprocess a source file
+C_\pico\pico-sdk\src\rp2_common\hardware_dma\dma.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projekt_zaliczenie.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projekt_zaliczenie.dir\C_\pico\pico-sdk\src\rp2_common\hardware_dma\dma.c.i
+.PHONY : C_\pico\pico-sdk\src\rp2_common\hardware_dma\dma.c.i
+
+C_\pico\pico-sdk\src\rp2_common\hardware_dma\dma.s: C_\pico\pico-sdk\src\rp2_common\hardware_dma\dma.c.s
+.PHONY : C_\pico\pico-sdk\src\rp2_common\hardware_dma\dma.s
+
+# target to generate assembly for a file
+C_\pico\pico-sdk\src\rp2_common\hardware_dma\dma.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projekt_zaliczenie.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projekt_zaliczenie.dir\C_\pico\pico-sdk\src\rp2_common\hardware_dma\dma.c.s
+.PHONY : C_\pico\pico-sdk\src\rp2_common\hardware_dma\dma.c.s
+
 C_\pico\pico-sdk\src\rp2_common\hardware_flash\flash.obj: C_\pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.obj
 .PHONY : C_\pico\pico-sdk\src\rp2_common\hardware_flash\flash.obj
 
@@ -1086,6 +1123,30 @@ C_\pico\pico-sdk\src\rp2_common\hardware_pll\pll.s: C_\pico\pico-sdk\src\rp2_com
 C_\pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projekt_zaliczenie.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projekt_zaliczenie.dir\C_\pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.s
 .PHONY : C_\pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.s
+
+C_\pico\pico-sdk\src\rp2_common\hardware_rtc\rtc.obj: C_\pico\pico-sdk\src\rp2_common\hardware_rtc\rtc.c.obj
+.PHONY : C_\pico\pico-sdk\src\rp2_common\hardware_rtc\rtc.obj
+
+# target to build an object file
+C_\pico\pico-sdk\src\rp2_common\hardware_rtc\rtc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projekt_zaliczenie.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projekt_zaliczenie.dir\C_\pico\pico-sdk\src\rp2_common\hardware_rtc\rtc.c.obj
+.PHONY : C_\pico\pico-sdk\src\rp2_common\hardware_rtc\rtc.c.obj
+
+C_\pico\pico-sdk\src\rp2_common\hardware_rtc\rtc.i: C_\pico\pico-sdk\src\rp2_common\hardware_rtc\rtc.c.i
+.PHONY : C_\pico\pico-sdk\src\rp2_common\hardware_rtc\rtc.i
+
+# target to preprocess a source file
+C_\pico\pico-sdk\src\rp2_common\hardware_rtc\rtc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projekt_zaliczenie.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projekt_zaliczenie.dir\C_\pico\pico-sdk\src\rp2_common\hardware_rtc\rtc.c.i
+.PHONY : C_\pico\pico-sdk\src\rp2_common\hardware_rtc\rtc.c.i
+
+C_\pico\pico-sdk\src\rp2_common\hardware_rtc\rtc.s: C_\pico\pico-sdk\src\rp2_common\hardware_rtc\rtc.c.s
+.PHONY : C_\pico\pico-sdk\src\rp2_common\hardware_rtc\rtc.s
+
+# target to generate assembly for a file
+C_\pico\pico-sdk\src\rp2_common\hardware_rtc\rtc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projekt_zaliczenie.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projekt_zaliczenie.dir\C_\pico\pico-sdk\src\rp2_common\hardware_rtc\rtc.c.s
+.PHONY : C_\pico\pico-sdk\src\rp2_common\hardware_rtc\rtc.c.s
 
 C_\pico\pico-sdk\src\rp2_common\hardware_spi\spi.obj: C_\pico\pico-sdk\src\rp2_common\hardware_spi\spi.c.obj
 .PHONY : C_\pico\pico-sdk\src\rp2_common\hardware_spi\spi.obj
@@ -2061,6 +2122,7 @@ help:
 	@echo ... Projekt_zaliczenie
 	@echo ... bs2_default
 	@echo ... bs2_default_library
+	@echo ... lib
 	@echo ... C_/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
 	@echo ... C_/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i
 	@echo ... C_/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s
@@ -2155,6 +2217,9 @@ help:
 	@echo ... C_/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i
 	@echo ... C_/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s
 	@echo ... C_/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj
+	@echo ... C_/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj
+	@echo ... C_/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i
+	@echo ... C_/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s
 	@echo ... C_/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj
 	@echo ... C_/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i
 	@echo ... C_/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s
@@ -2174,6 +2239,9 @@ help:
 	@echo ... C_/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj
 	@echo ... C_/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i
 	@echo ... C_/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s
+	@echo ... C_/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.obj
+	@echo ... C_/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.i
+	@echo ... C_/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.s
 	@echo ... C_/pico/pico-sdk/src/rp2_common/hardware_spi/spi.obj
 	@echo ... C_/pico/pico-sdk/src/rp2_common/hardware_spi/spi.i
 	@echo ... C_/pico/pico-sdk/src/rp2_common/hardware_spi/spi.s

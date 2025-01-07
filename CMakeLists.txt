@@ -27,7 +27,9 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(Projekt_zaliczenie Projekt_zaliczenie.c bmp280_i2c.c)
+add_executable(Projekt_zaliczenie 
+Projekt_zaliczenie.c 
+bmp280_i2c.c)
 
 pico_set_program_name(Projekt_zaliczenie "Projekt_zaliczenie")
 pico_set_program_version(Projekt_zaliczenie "0.1")
@@ -45,6 +47,8 @@ target_include_directories(Projekt_zaliczenie PRIVATE
   ${CMAKE_CURRENT_LIST_DIR}/.. # for our common lwipopts or any other standard includes, if required
 )
 
+add_subdirectory(lib)
+
 # Add any user requested libraries
 target_link_libraries(Projekt_zaliczenie 
         hardware_spi
@@ -53,7 +57,7 @@ target_link_libraries(Projekt_zaliczenie
         hardware_timer
         hardware_watchdog
         hardware_clocks
+        lib
         )
 
 pico_add_extra_outputs(Projekt_zaliczenie)
-

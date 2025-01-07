@@ -10,6 +10,9 @@
 #include "hardware/watchdog.h"
 #include "hardware/clocks.h"
 
+//#include "sd_card.h"
+#include "ff.h"
+//#include "data_logger.h"
 
 //my includes
 #include "bmp280_i2c.c"
@@ -51,6 +54,8 @@ int64_t alarm_callback(alarm_id_t id, void *user_data) {
 }
 
 #define LED_PIN 25
+
+
 
 int main()
 {

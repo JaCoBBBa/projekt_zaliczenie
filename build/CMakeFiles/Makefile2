@@ -54,16 +54,34 @@ CMAKE_BINARY_DIR = C:\Users\A\Desktop\Projekt_zaliczenie\build
 # The main recursive "all" target.
 all: CMakeFiles\Projekt_zaliczenie.dir\all
 all: pico-sdk\all
+all: lib\all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: pico-sdk\preinstall
+preinstall: lib\preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles\Projekt_zaliczenie.dir\clean
 clean: pico-sdk\clean
+clean: lib\clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory lib
+
+# Recursive "all" directory target.
+lib\all: lib\CMakeFiles\lib.dir\all
+.PHONY : lib\all
+
+# Recursive "preinstall" directory target.
+lib\preinstall:
+.PHONY : lib\preinstall
+
+# Recursive "clean" directory target.
+lib\clean: lib\CMakeFiles\lib.dir\clean
+.PHONY : lib\clean
 
 #=============================================================================
 # Directory level rules for directory pico-sdk
@@ -1767,14 +1785,15 @@ pico-sdk\tools\clean:
 
 # All Build rule for target.
 CMakeFiles\Projekt_zaliczenie.dir\all: pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default_library.dir\all
+CMakeFiles\Projekt_zaliczenie.dir\all: lib\CMakeFiles\lib.dir\all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projekt_zaliczenie.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projekt_zaliczenie.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projekt_zaliczenie.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projekt_zaliczenie.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85 "Built target Projekt_zaliczenie"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49 "Built target Projekt_zaliczenie"
 .PHONY : CMakeFiles\Projekt_zaliczenie.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\Projekt_zaliczenie.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles 90
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles 94
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\Projekt_zaliczenie.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles 0
 .PHONY : CMakeFiles\Projekt_zaliczenie.dir\rule
@@ -1795,12 +1814,12 @@ CMakeFiles\Projekt_zaliczenie.dir\clean:
 pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default.dir\all:
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default.dir\build.make /nologo -$(MAKEFLAGS) pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default.dir\depend
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default.dir\build.make /nologo -$(MAKEFLAGS) pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles --progress-num=86,87 "Built target bs2_default"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles --progress-num=50 "Built target bs2_default"
 .PHONY : pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default.dir\all
 
 # Build rule for subdir invocation for target.
 pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles 0
 .PHONY : pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default.dir\rule
@@ -1821,12 +1840,12 @@ pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default.dir\clean:
 pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default_bin.dir\all: pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default.dir\all
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default_bin.dir\build.make /nologo -$(MAKEFLAGS) pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default_bin.dir\depend
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default_bin.dir\build.make /nologo -$(MAKEFLAGS) pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default_bin.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles --progress-num=88 "Built target bs2_default_bin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles --progress-num= "Built target bs2_default_bin"
 .PHONY : pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default_bin.dir\all
 
 # Build rule for subdir invocation for target.
 pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default_bin.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default_bin.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles 0
 .PHONY : pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default_bin.dir\rule
@@ -1847,12 +1866,12 @@ pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default_bin.dir\clean:
 pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default_library.dir\all: pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default.dir\all
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default_library.dir\build.make /nologo -$(MAKEFLAGS) pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default_library.dir\depend
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default_library.dir\build.make /nologo -$(MAKEFLAGS) pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default_library.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles --progress-num=89,90,91 "Built target bs2_default_library"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles --progress-num=51,52 "Built target bs2_default_library"
 .PHONY : pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default_library.dir\all
 
 # Build rule for subdir invocation for target.
 pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default_library.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default_library.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles 0
 .PHONY : pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default_library.dir\rule
@@ -1873,12 +1892,12 @@ pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default_library.dir\clean:
 pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\pioasmBuild.dir\all:
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\pioasmBuild.dir\build.make /nologo -$(MAKEFLAGS) pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\pioasmBuild.dir\depend
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\pioasmBuild.dir\build.make /nologo -$(MAKEFLAGS) pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\pioasmBuild.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles --progress-num=93,94,95,96,97,98,99,100 "Built target pioasmBuild"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles --progress-num=96,97,98,99,100 "Built target pioasmBuild"
 .PHONY : pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\pioasmBuild.dir\all
 
 # Build rule for subdir invocation for target.
 pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\pioasmBuild.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\pioasmBuild.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles 0
 .PHONY : pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\pioasmBuild.dir\rule
@@ -1899,12 +1918,12 @@ pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\pioasmBuild.dir\clean:
 pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir\all: pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\pioasmBuild.dir\all
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir\build.make /nologo -$(MAKEFLAGS) pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir\depend
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir\build.make /nologo -$(MAKEFLAGS) pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles --progress-num=92 "Built target cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles --progress-num=53 "Built target cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
 .PHONY : pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir\all
 
 # Build rule for subdir invocation for target.
 pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles 0
 .PHONY : pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir\rule
@@ -1917,6 +1936,32 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h: pico-sdk\src\rp2_common\pico_cyw43_d
 pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir\clean:
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir\build.make /nologo -$(MAKEFLAGS) pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir\clean
 .PHONY : pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir\clean
+
+#=============================================================================
+# Target rules for target lib/CMakeFiles/lib.dir
+
+# All Build rule for target.
+lib\CMakeFiles\lib.dir\all: pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default_library.dir\all
+	$(MAKE) $(MAKESILENT) -f lib\CMakeFiles\lib.dir\build.make /nologo -$(MAKEFLAGS) lib\CMakeFiles\lib.dir\depend
+	$(MAKE) $(MAKESILENT) -f lib\CMakeFiles\lib.dir\build.make /nologo -$(MAKEFLAGS) lib\CMakeFiles\lib.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles --progress-num=54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95 "Built target lib"
+.PHONY : lib\CMakeFiles\lib.dir\all
+
+# Build rule for subdir invocation for target.
+lib\CMakeFiles\lib.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles 45
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) lib\CMakeFiles\lib.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\A\Desktop\Projekt_zaliczenie\build\CMakeFiles 0
+.PHONY : lib\CMakeFiles\lib.dir\rule
+
+# Convenience name for target.
+lib: lib\CMakeFiles\lib.dir\rule
+.PHONY : lib
+
+# clean rule for target.
+lib\CMakeFiles\lib.dir\clean:
+	$(MAKE) $(MAKESILENT) -f lib\CMakeFiles\lib.dir\build.make /nologo -$(MAKEFLAGS) lib\CMakeFiles\lib.dir\clean
+.PHONY : lib\CMakeFiles\lib.dir\clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

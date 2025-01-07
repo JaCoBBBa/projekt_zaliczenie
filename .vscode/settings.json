@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "ff.h": "c",
+        "clocks.h": "c",
+        "data_logger.h": "c",
+        "binary_info.h": "c"
+    }
+}

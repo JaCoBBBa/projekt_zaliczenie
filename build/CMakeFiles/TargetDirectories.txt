@@ -196,3 +196,6 @@ C:/Users/A/Desktop/Projekt_zaliczenie/build/pico-sdk/src/rp2_common/pico_stdlib/
 C:/Users/A/Desktop/Projekt_zaliczenie/build/pico-sdk/src/rp2_common/pico_stdlib/CMakeFiles/rebuild_cache.dir
 C:/Users/A/Desktop/Projekt_zaliczenie/build/pico-sdk/docs/CMakeFiles/edit_cache.dir
 C:/Users/A/Desktop/Projekt_zaliczenie/build/pico-sdk/docs/CMakeFiles/rebuild_cache.dir
+C:/Users/A/Desktop/Projekt_zaliczenie/build/lib/CMakeFiles/lib.dir
+C:/Users/A/Desktop/Projekt_zaliczenie/build/lib/CMakeFiles/edit_cache.dir
+C:/Users/A/Desktop/Projekt_zaliczenie/build/lib/CMakeFiles/rebuild_cache.dir
